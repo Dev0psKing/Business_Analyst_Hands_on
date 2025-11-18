@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Strategy Case Exam Viewer</title>
+    <title>Data Strategy Case Exam Solution Viewer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -60,7 +60,7 @@
 <aside id="sidebar">
     <div class="sidebar-header">
         <div class="sidebar-icon"><i class="fas fa-file-excel"></i></div>
-        <div class="sidebar-title"><h1>Data Strategy Case Exam</h1><p id="lesson-count"></p></div>
+        <div class="sidebar-title"><h1>Data Strategy Case Exam Solution</h1><p id="lesson-count"></p></div>
     </div>
     <div class="sidebar-controls">
         <div class="search-wrapper"><i class="fas fa-search"></i><input type="text" id="search" placeholder="Search lessons..."></div>
@@ -82,40 +82,40 @@
         <iframe id="content" style="display:none;"></iframe>
         <div id="empty-state">
             <i class="fas fa-graduation-cap"></i>
-            <h2>Welcome to Data Strategy Case Exam</h2>
+            <h2>Welcome to Data Strategy Case Exam Solution</h2>
             <p>Select a lesson from the sidebar to start your learning journey.</p>
         </div>
     </div>
 </main>
 <script>
     const files = [
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：14：13).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：14：39).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：14：59).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：15：34).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：15：58).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：20：23).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：20：42).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：20：58).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：21：10).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：21：22).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：21：36).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：21：50).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：22：06).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：22：18).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：22：30).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：22：43).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：23：00).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：23：18).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：23：32).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：23：53).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：24：08).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：24：25).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：24：37).html",
-    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 08：24：53).html"
+    "Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：12：51).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：09：44).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：10：54).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：11：05).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：11：19).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：11：33).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：11：44).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：11：55).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：12：07).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：12：17).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：12：29).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：12：42).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：12：53).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：13：23).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：13：42).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：13：54).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：14：15).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：14：28).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：14：40).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：14：51).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：15：02).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：15：16).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：15：29).html",
+    "Solution Course Exam： Data Strategy ｜ 365 Data Science (18_11_2025 09：15：42).html"
 ];
     let currentIndex = -1;
-    const courseTitle = "Data Strategy Case Exam";
+    const courseTitle = "Data Strategy Case Exam Solution";
 
     const fileListDiv = document.getElementById('fileList'), contentFrame = document.getElementById('content'), emptyStateDiv = document.getElementById('empty-state'), lessonStatusDiv = document.getElementById('lesson-status'), prevBtn = document.getElementById('prevBtn'), nextBtn = document.getElementById('nextBtn'), searchInput = document.getElementById('search'), progressBar = document.getElementById('progress-bar'), lessonCountP = document.getElementById('lesson-count');
 
